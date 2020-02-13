@@ -49,6 +49,7 @@ for r_count in range(r_num):
                 print('It\'s a draw!')
         elif p1_choice == '3' and p2_choice == '3':
                 print('It\'s a draw!')
+#Determine who wins the game
 if p1_r_win > p2_r_win:
         print(p1 + ' wins the game!')
 elif p1_r_win < p2_r_win:
