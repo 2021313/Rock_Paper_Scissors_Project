@@ -3,7 +3,7 @@ from random import randint
 #Get players names
 first_p_name = input('Please enter your name: ')
 second_p_name = input('Please enter your name: ')
-print("Hello", first_p_name, "and", second_p_name, "welcome to rock paper scissors!")
+print("Hello ", first_p_name, " and ", second_p_name, " welcome to rock paper scissors!")
 #Pick who plays first
 first_player = randint(1,2)
 if first_player == 1:
