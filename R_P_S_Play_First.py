@@ -1,18 +1,18 @@
 from random import randint
-def Pick_First_Player():
+def Get_Player_Name():
     #Get players names
-    first_p_name = input('Please enter your name: ')
-    second_p_name = input('Please enter your name: ')
-    print("Hello ", first_p_name, " and ", second_p_name, " welcome to rock paper scissors!")
+    name = input('Please enter your name: ')
+    return name
+def Pick_First_Player(fpname, spname):
     #Pick who plays first
     first_player = randint(1,2)
     if first_player == 1:
-        print(first_p_name + ' goes first!')
-        p1 = first_p_name
-        p2 = second_p_name
+        print(fpname + ' goes first!')
+        p1 = fpname
+        p2 = spname
         return p1, p2
     elif first_player == 2:
-        print(second_p_name + ' goes first!')
-        p1 = second_p_name
-        p2 = first_p_name
+        print(spname + ' goes first!')
+        p1 = spname
+        p2 = fpname
         return p1, p2
