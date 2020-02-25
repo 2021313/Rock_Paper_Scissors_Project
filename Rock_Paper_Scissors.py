@@ -1,19 +1,6 @@
+from R_P_S_Play_First import Pick_First_Player
 import getpass
-from random import randint
-#Get players names
-first_p_name = input('Please enter your name: ')
-second_p_name = input('Please enter your name: ')
-print("Hello ", first_p_name, " and ", second_p_name, " welcome to rock paper scissors!")
-#Pick who plays first
-first_player = randint(1,2)
-if first_player == 1:
-        print(first_p_name + ' goes first!')
-        p1 = first_p_name
-        p2 = second_p_name
-elif first_player == 2:
-        print(second_p_name + ' goes first!')
-        p1 = second_p_name
-        p2 = first_p_name
+p1, p2 = Pick_First_Player()
 #Select how many rounds there are
 r_count = 1
 r_num = int(input('Please specify how many rounds you want to play: '))
