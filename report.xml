@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="DevonPainton-L" name="pytest" skipped="0" tests="2" time="0.417" timestamp="2020-03-04T15:41:10.150455"><testcase classname="test_R_P_S" file="test_R_P_S.py" line="6" name="test_Get_Player_Name" time="0.006"><failure message="AttributeError: &apos;builtin_function_or_method&apos; object has no attribute &apos;capitalize&apos;">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000019F6869B1F0&gt;
+
+    def test_Get_Player_Name(monkeypatch):
+        monkeypatch.setattr(&apos;sys.stdin&apos;, name_input)
+&gt;       assert Get_Player_Name() == &apos;Devon&apos;
+
+test_R_P_S.py:9: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def Get_Player_Name():
+        #Get players names
+&gt;       name = input(&apos;Please enter your name: &apos;).lower.capitalize
+E       AttributeError: &apos;builtin_function_or_method&apos; object has no attribute &apos;capitalize&apos;
+
+R_P_S_Play_First.py:4: AttributeError</failure><system-out>Please enter your name: </system-out></testcase><testcase classname="test_R_P_S" file="test_R_P_S.py" line="10" name="test_Pick_First_Player" time="0.003"><system-out>Devon goes first!
+</system-out></testcase></testsuite></testsuites>

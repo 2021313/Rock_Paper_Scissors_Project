@@ -1,7 +1,7 @@
 from random import randint
 def Get_Player_Name():
     #Get players names
-    name = input('Please enter your name: ')
+    name = input('Please enter your name: ').lower.capitalize
     return name
 def Pick_First_Player(fpname, spname):
     #Pick who plays first
